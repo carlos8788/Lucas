@@ -1,0 +1,46 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* RESOLUCIóN de 375px */
+
+body {
+    background-color: gray;
+}
+
+.title {
+    margin: 40px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img img {
+    height: 250px;
+}
+
+
+/* RESOLUCIóN de 768px */
+
+@media (min-width: 768px) {
+    body {
+        background-color: rgb(204, 149, 149);
+    }
+    .container-img img {
+        height: 500px;
+    }
+    
+}
+
+/* RESOLUCIóN de 1024px */
+
+/* RESOLUCIóN de 1900px */
