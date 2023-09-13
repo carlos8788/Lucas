@@ -13,9 +13,9 @@
 .cabecera {
     background-color: bisque;
     height: 15vh;
-    height: 144.75px;
-    position: sticky;
-    top: 0;
+    height: 120px;
+    /* position: sticky; */
+    /* top: 0; */
 
 }
 
@@ -78,7 +78,7 @@
 /* MAIN */
 .principal {
 
-    height: 75vh;
+    height: 500px;
     display: flex;
     justify-content: center;
 }
@@ -122,8 +122,8 @@
 }
 
 .section-img {
-    height: 600px;
-    width: 800px;
+    height: 450px;
+    width: 650px;
     background-image: url('/img/main.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +136,7 @@
 .pie-de-pag {
     /* background-color: lightcoral; */
     height: 10vh;
-    height: 96.5px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
