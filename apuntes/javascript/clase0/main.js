@@ -1,7 +1,7 @@
 // Tipos de datos primitivos
  
 // numericos -> number
-// cadenas -> string
+// cadenas -> string (texto)
 // booleana -> boolean (un tipo de dato es true o false)
 
 
@@ -16,7 +16,7 @@ const APELLIDO = `Perez`
 
 // VARIABLES
 
-// var edad = 29 -> ya casi no se utiliza este declaración
+// var edad = 29 -> ya casi no se utiliza esta declaración
 // let edad = 29
 
 let edad = 29
@@ -35,7 +35,7 @@ let valorDeVerdad = false
 let oracion = NOMBRE + ' ' + SEGUNDO_NOMBRE + ' ' + APELLIDO + ' ' + edad
 console.log(oracion)
 
-let oracionCorregida = `${NOMBRE} ${SEGUNDO_NOMBRE} ${APELLIDO} ${edad}`
+let oracionCorregida = `${NOMBRE} ${SEGUNDO_NOMBRE} ${APELLIDO}, Edad:${edad}`
 console.log(oracionCorregida) // Manera correcta de trabajar
 
 // console.log('Lucas Fernando Perez')
@@ -65,7 +65,7 @@ seccion.innerText = oracionCorregida
 seccion.innerHTML = `<h2 class="estiloJS">${oracionCorregida}</h2>`
 
 
-const articulos = document.getElementById('clase1')
+const articulos = document.getElementById('clase0')
 
 // let divs = ''
 
