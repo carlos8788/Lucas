@@ -134,6 +134,12 @@ const luis = 19
 // Operador negacion 
 // ! --> Solamente el signo de exclamación de cierre
 
-console.log(!true) // false
+// console.log(!true) // false
 
+// el "if" Siempre recibe un valor de verdad entre los parentesis
+// Es decir que lo que está adentro equivale a un booleano
+console.log(2>1)
+if (2>1){
+    console.log('SI es MAYOR')
+}
 
