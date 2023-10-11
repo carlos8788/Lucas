@@ -1,5 +1,5 @@
 // Tipos de datos primitivos
- 
+//  tipo de comentarios 
 // numericos -> number
 // cadenas -> string (texto)
 // booleana -> boolean (un tipo de dato es true o false)
@@ -41,7 +41,7 @@ console.log(oracionCorregida) // Manera correcta de trabajar
 // console.log('Lucas Fernando Perez')
 
 console.error('esto es un error')
-console.warn('Tené cuidado flaco estas por cometer un error')
+console.warn('Esto es una advertencia')
 
 
 // PARA TRABAJAR EN EL HTML que muestra el navegador
