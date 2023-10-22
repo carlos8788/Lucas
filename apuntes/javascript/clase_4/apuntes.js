@@ -70,7 +70,113 @@ function capitalizar(palabra) {
     console.log(palabra)
 }
 
-capitalizar('luis')
-capitalizar('carlos')
-capitalizar('perez')
-capitalizar('gonzalez')
+// capitalizar('luis')
+// capitalizar('carlos')
+// capitalizar('perez')
+// capitalizar('gonzalez')
+
+
+let suma;
+let resta;
+
+let numero1 = 10;
+let numero2 = 30;
+let numero3 = 40;
+let numero4 = 50;
+
+// console.log(numero1 + numero2)
+// console.log(`Usted está sumando: ${numero1} + ${numero2}`)
+// console.log(numero1 + numero3)
+// console.log(`Usted está sumando: ${numero1} + ${numero3}`)
+// console.log(numero1 + numero2)
+// console.log(`Usted está sumando: ${numero1} + ${numero4}`)
+suma = numero1 + numero3
+suma = numero1 + numero4
+
+
+resta = numero1 - numero2
+resta = numero1 - numero3
+resta = numero1 - numero4
+
+// let mostrarCartel = prompt('Que tiene que hacer')
+
+// function sumar(x, y){
+//     console.log(`Usted está sumando: ${x} + ${y}`)
+//     console.log(x + y)
+// }
+
+function funcionCuadratica(a, b, c) {
+    /**
+     * "a" es el termino cuadratico
+     * "b" es el termino lineal
+     * "c" es el termino independiente
+     */
+    let numerador1 = b * (-1) + (b * b - 4 * a * c) ** (1 / 2)
+    let numerador2 = b * (-1) - (b * b - 4 * a * c) ** (1 / 2)
+    let denominador = 2 * a
+    let x1 = numerador1 / denominador
+    let x2 = numerador2 / denominador
+    console.log('estoy dentro de la funcion')
+    return `las raices son ${x1} y ${x2}`
+}
+
+// let resultado = funcionCuadratica(1, 0, -1)
+// console.log(resultado)
+
+// let resultado;
+// console.log(resultado)
+
+// Arrays (listas)
+// Como propiedades principales:
+// La lista tiene indice y es ordenada
+
+let lista = [
+    'Draco', 
+    'bobo', 
+    'mia', 
+    'corazon', 
+    'locky'
+]
+// console.log(lista.length)
+
+// Elimina el ultimo elemento
+console.log(lista.pop())
+//Elimina el primer elemento
+console.log(lista.shift())
+
+// Copiar una lista --> hay mas maneras
+let lista2 = lista
+console.log(lista2)
+
+// push() – Inserta un elemento al final del arreglo.
+let blanquita = 'blanquita'
+lista.push(blanquita)
+console.log(lista);
+
+//el caracter que se pase como parametro (se puede no pasar ningun, solo comillas)
+// join() une todos los elementos de una lista unido según 
+let texto = lista.join('')
+console.log(texto)
+
+// includes() verifica si el elemento que se busca existe en la lista
+console.log(lista.includes('locky'))
+
+// indexOf() devuelve el indice del elemento donde se encuentra, en caso de no encontrar nada devuelve -1
+console.log(lista.indexOf('bobo'))
+
+
+// Objetos
+// No es ordenado, no tiene indice pero tiene propiedad o clave
+
+let lucas = { 
+    primerNombre: 'Lucas',
+    segundoNombre: 'Fernando',
+    primerApellido: 'Perez', 
+    segundoApellido: 'Gonzalez', 
+    edad: 29, casado: false, 
+    deporte: 'Furbol', 
+    domicilio: 'Av siempre viva 123', 
+    dni: 38155723,
+    apodo: ['unudo', 'chango', 'lucifer']
+}
+
