@@ -605,7 +605,14 @@ let pokemones = [
     }
 ]
 
-const pokeresult = pokemones.map((pokemon, key) => pokemon.url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${key+1}.png`)
+const pokeresult = pokemones.map((pokemon, key) => {
+    let pok = {
+        name: pokemon.name,
+        url : pokemon.url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${key+1}.png`
+    }
+
+    return pok
+})
 console.log(pokeresult[0]);
 // Crear Variable
 
