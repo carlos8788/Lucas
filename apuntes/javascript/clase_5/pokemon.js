@@ -610,10 +610,11 @@ const pokeresult = pokemones.map((pokemon, key) => {
         name: pokemon.name,
         url : pokemon.url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${key+1}.png`
     }
-
+    console.log(pok);
     return pok
 })
-console.log(pokeresult[0]);
+// console.log(pokeresult[0]);
+
 // Crear Variable
 
 let pokeFront = ''
@@ -632,8 +633,10 @@ pokeresult.forEach(
 
 // llamamos al contenedor
 let contenedor = document.querySelector('.contenedorPokes')
-
+let titulo = document.querySelector('#titulo')
+console.log(titulo)
 
 //Introducimos la variable en el contenedor
 
+// titulo.innerHTML = '<h2 class="patoverde">Patito color de café</h2>'
 contenedor.innerHTML = pokeFront

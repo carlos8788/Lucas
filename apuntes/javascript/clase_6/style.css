@@ -1,0 +1,54 @@
+.contenedor {
+    height: 90vh;
+    background-color: gray;
+}
+
+section {
+    height: 200px;
+    background-color: rgb(216, 124, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+}
+
+#uno {
+    background-color: rgb(155, 124, 216);
+}
+
+#dos {
+    background-color: rgb(138, 216, 124);
+}
+
+#tres {
+    background-color: rgb(191, 216, 124);
+}
+
+.formulario {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-form {
+    margin-top: 20px;
+}
+.contenedorPokes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+img {
+    width: 100px;
+}
