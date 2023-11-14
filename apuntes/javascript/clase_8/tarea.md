@@ -7,7 +7,8 @@
 
    ```javascript
    let frutas = ['manzana', 'plátano'];
-   frutas.push('naranja'); // ['manzana', 'plátano', 'naranja']
+   let naranja = 'naranja'
+   frutas.push(); // ['manzana', 'plátano', 'naranja']
    ```
 
 2. **pop()**
