@@ -27,13 +27,25 @@ actualizarPrecio(frutas, 0, 350)
 
 
 function actualizarCanti(arrayFrutas, indice, cantidadNueva) {
-    if (arrayFrutas.length)
+    if (arrayFrutas.length - 1 <=indice){
+        if(cantidadNueva > 0){
+            arrayFrutas[indice].cantidad = cantidadNueva
+        }
+        else{
+            console.log('La cantidad no puede ser menor a 0');
+        }
+    }else{
+        console.log('El indice no es correcto');
+    }
     
 
 }
 
-// actualizarCanti(frutas, 0, 90)
-// actualizarCanti(frutas, 4, -20)
+actualizarCanti(frutas, 0, 90)
+actualizarCanti(frutas, 4, -20)
 
-console.log(frutas.length - 1)
-console.log(frutas)
+console.log(frutas.length);
+console.log(frutas.length - 1);
+
+// TAREA
+// Condicionar para que el precio sea mayor a 0, y que el indice también no sea mayor al indice del ultimo elemento
