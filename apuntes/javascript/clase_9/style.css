@@ -1,0 +1,10 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
