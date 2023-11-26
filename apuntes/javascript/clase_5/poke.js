@@ -1,3 +1,6 @@
+
+const fs = require('fs');
+
 let pokemones = [
     {
         name: "bulbasaur",
@@ -605,38 +608,21 @@ let pokemones = [
     }
 ]
 
-const pokeresult = pokemones.map((pokemon, key) => {
-    let pok = {
-        name: pokemon.name,
-        url : pokemon.url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${key+1}.png`
-    }
-    console.log(pok);
-    return pok
-})
-// console.log(pokeresult[0]);
+// Supongamos que pokemones es tu array de objetos Pokémon
+const pokeresultado = pokemones.map((pokemon, key) => {
+  return {
+    name: pokemon.name,
+    url: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${key+1}.png`
+  };
+});
 
-// Crear Variable
+// Convertir el resultado en una cadena JSON
+const data = JSON.stringify(pokeresultado, null, 2);
 
-let pokeFront = ''
-
-// rellenar variable
-pokeresult.forEach(
-    function (poke) {
-        pokeFront += `<div class="card-pokemon">
-                        <h4>${poke.name}</h4>
-                        <figure><img src="${poke.url}" alt="${poke.name}"> </figure>
-                        
-                    </div>`
-    }
-)
-
-
-// llamamos al contenedor
-let contenedor = document.querySelector('.contenedorPokes')
-let titulo = document.querySelector('#titulo')
-console.log(titulo)
-
-//Introducimos la variable en el contenedor
-
-// titulo.innerHTML = '<h2 class="patoverde">Patito color de café</h2>'
-contenedor.innerHTML = pokeFront
+// Escribir la cadena JSON en un archivo
+fs.writeFile('pokeresultado.json', data, (err) => {
+  if (err) {
+    throw err;
+  }
+  console.log('El archivo ha sido guardado con los datos JSON.');
+});
