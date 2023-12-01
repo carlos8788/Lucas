@@ -53,3 +53,23 @@ const valor = numeros.find(function(numero){
     }
 })
 console.log(valor)
+
+// EJERCICIO 4
+
+function unNombre(){
+    // contenedor
+    let titulo = '<h1>Soy un titulo</h1>'
+    // contenedor.innerHTML = titulo
+}
+
+function retornaAlgo(){
+    return 10
+}
+
+let otroValor = retornaAlgo()
+
+let otrNumero = otroValor + 15
+
+console.log(otrNumero)
+
+unNombre()
